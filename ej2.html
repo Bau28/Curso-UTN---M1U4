@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <script>
+
+        let nro = parseInt(prompt(`Ingrese el largo de su arreglo: `, ''));
+        let array = [];
+        
+        for (let i = 0; i < nro; i++){
+            array[i] = parseInt(prompt(`Ingrese el valor ${i+1} de ${nro}:`, ''));
+        }
+
+        let mayor = array[0];
+
+        for (let j = 0; j < nro; j++){
+            if (array[j] > mayor){
+                mayor = array[j];
+            }
+        }
+        document.write(`El mayor valor del arreglo es: ${mayor}`);
+    
+    </script>
+</body>
+</html>
